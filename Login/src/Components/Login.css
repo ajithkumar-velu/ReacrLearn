@@ -1,0 +1,152 @@
+.card{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 100px auto 0;
+    width: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px 10px;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, .5);
+}
+.header{
+    text-align: center;
+    color: #303030;
+}
+@keyframes ani1 {
+    from{
+        right: -415px;
+    }
+    to{
+        right: 0;
+    }
+}
+@keyframes ani2 {
+    from{
+        left: -415px;
+    }
+    to{
+        left: 0;
+    }   
+}
+#doctor{
+    animation: ani1 .5s;
+    position: relative;
+}
+#patient{
+    animation: ani2 .5s;
+    position: relative;
+}
+.row{
+    width: 80%;
+    margin: auto;
+}
+.col{
+    transition: 1s;
+}
+input[type='text'], input[type='password']{
+    width: 100%;
+    outline: none;
+    border: 1px solid #c1c1c1;
+    padding: 10px;    
+    padding-left: 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 17px;
+    box-sizing: border-box;
+    
+}
+input:focus{
+    outline: 1px solid;
+    outline-color: blue;
+}
+label{
+    font-size: 18px;
+    color: #141414;
+}
+.btn{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 15px 0;
+    color: #fff;
+    background-color: #3860e0;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #1e4de6;
+}
+.TandC{
+    margin-top: 0px;
+}
+.options{
+    text-align: center;
+}
+.options a{
+    color: blue;
+}
+.img{
+    width: 100px;
+    margin: auto;
+    
+}
+.img-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.doc, .pat{
+    width: 30%;
+    padding: 5px 0;
+    border: 2px solid #c1c1c1;
+    gap: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.doc.active, .pat.active{
+    border-color: #1e4de6;
+    transition: 1s;
+}
+.divider{
+    font-size: 20px;
+    display: flex;
+    align-items: center;    
+}
+.divider::before, .divider::after{
+    flex: 1;
+    content: "";
+    padding: 1px;
+    background-color: #c1c1c1;
+    margin: 5px;
+}
+.icon-container{
+    text-align: center;
+    margin-top: 10px;
+}
+.fa{
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fa-google{
+    color: 	#c22a2a;
+    border-color: #c22a2a;
+}
+.fa-facebook{
+    color: #316ff6;
+    border-color: #316ff6;
+}
+.fa-linkedin{
+    color: #0077b5;
+    border-color: #0077b5;
+}
