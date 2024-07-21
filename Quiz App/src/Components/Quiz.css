@@ -1,0 +1,49 @@
+.QnA-container{
+    margin-top: 20px;
+}
+.Q{
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.Ans{
+    
+    display: block;
+    border: 2px solid #bbb;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.correct{
+    background-color: #00ff0067;
+}
+.wrong{
+    background-color: #ff20203f;
+}
+.question-range{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0px;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.result button{
+    background-color: #00ff0067;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.result button:hover{
+    background-color: #00ff00c7;
+}
