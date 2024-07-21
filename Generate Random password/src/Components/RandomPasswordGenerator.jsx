@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './password.css'
 const RandomPasswordGenerator = () => {
     const [password, setPassword] = useState("");

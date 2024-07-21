@@ -1,4 +1,3 @@
-import React from 'react'
 import RandomPasswordGenerator from './Components/RandomPasswordGenerator'
 
 const App = () => {
