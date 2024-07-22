@@ -46,9 +46,6 @@ body {
     cursor: pointer;
     transition: .1s ease;
 }
-.btn:hover{
-    
-}
 .btn:active{
     box-shadow: -10px -5px 10px #152b2b;
     transform: translate(1%, 1%);

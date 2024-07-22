@@ -19,25 +19,25 @@ const Notes = () => {
     const handleDeleteNote = (id) =>{
         setNotes(Notes.filter((note) => note.id !== id))
     }
-    function h(){
-        setNotes(n=>[...n, {id: Date.now(), text: ''}])
+    function handleCreateNotes(){
+            setNotes([...Notes, {id: Date.now(), text: ''}])
     }
 
-    function handleCreateNotes() {
+    // function handleCreateNotes() {
 
-        setNotes([...Notes, { id: Date.now(), text: '', }])
+    //     setNotes([...Notes, { id: Date.now(), text: '', }])
 
-        // let ta = document.createElement('textarea');
-        // let i = document.createElement("i");
-        // ta.setAttribute('name', 'note')
-        // ta.className = "note"
-        // ta.innerHTML =""
-        // i.className = "fa-regular fa-trash-can"
-        // notesContainer.appendChild(ta)
-        // notesContainer.appendChild(i)
+    //     // let ta = document.createElement('textarea');
+    //     // let i = document.createElement("i");
+    //     // ta.setAttribute('name', 'note')
+    //     // ta.className = "note"
+    //     // ta.innerHTML =""
+    //     // i.className = "fa-regular fa-trash-can"
+    //     // notesContainer.appendChild(ta)
+    //     // notesContainer.appendChild(i)
 
 
-    }
+    // }
 
     return (
         <div className='main-container'>
@@ -47,7 +47,7 @@ const Notes = () => {
             </div>
 
             <div className="btn-container">
-                <button className='btn' onClick={h} ><i className="fa-regular fa-pen-to-square"></i>Create Notes</button>
+                <button className='btn' onClick={handleCreateNotes} ><i className="fa-regular fa-pen-to-square"></i>Create Notes</button>
             </div>
 
             <div id="notes-container">
@@ -76,9 +76,10 @@ const Notes = () => {
                                 value={note.text} 
                                 className='note'
                                 onChange={(e)=>{
-                                    Notes.map((n)=>{
-                                        setNotes(()=>n.id === note.id? e.target.value: null)
-                                    })
+                                    const un = Notes.map((n)=>
+                                        n.id === note.id? {...n, text:e.target.value}: n
+                                    )
+                                    setNotes(un)
                                 }}  // note.id === Notes.id ? e.target.value
                             ></textarea>
                         </div>
