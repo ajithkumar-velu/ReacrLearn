@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #ffc5b5, #E3A5C7);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'poppins';
+}
+
+.header {
+    margin-bottom: 50px;
+}
+.container{
+    margin: 50px;
+    margin-top: 300px;
+}
+.age-title-1 {
+    box-shadow: 1px 1px 2px #694F8E;
+    cursor: pointer;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 21px;
+    transition: .5s;
+}
+.age-title-1:hover{
+    box-shadow: none;
+    transform: scale(1.05)
+}
+.date-container{
+    background-color: #694F8E;
+    width: 700px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.date{
+    cursor: pointer;
+    flex: 2;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    border: 2px solid #aaa;
+    border-right: none;
+    font-weight: bold;
+    color: #694F8E;
+}
+.cal-btn{
+    cursor: pointer;
+    flex: 1;
+    font-size: 27px;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    outline: none;
+    border: 2px solid #aaa;
+    border-left: none;
+    background-color: #e6bb00;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+.age-result{
+    background-color: #a5b3e3;
+    width: 700px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+}
+.cal-btn:hover{
+    color: #e6bb00;
+    font-size: 24px;
+    background-color: #000;
+}
+::selection {
+    background: tomato;
+    color: #fff;
+  }
+::-webkit-selection {
+    background: tomato;
+    color: #fff;
+  }
+::-webkit-selection {
+    background: tomato;
+    color: #fff;
+  }
